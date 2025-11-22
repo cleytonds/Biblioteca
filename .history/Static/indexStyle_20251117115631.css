@@ -1,0 +1,156 @@
+/*cor do nome principal da pagina*/
+@keyframes brilho{
+    0%{ text-shadow: 0 0 10px #1abc9c;}
+    50%{ text-shadow: 0 0 20px #16a085;}
+    100%{ text-shadow: 0 0 10px #1abc9c;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Montserrat:wght@500&display=swap');
+
+
+/*margem da pagina*/
+h1{
+    margin-bottom: 38px;
+   
+}
+.titulo{
+    font-family: 'montserrat',sans-serif;
+}
+
+/*cores do menu da pagina*/
+h1{
+    padding: 2rem;
+    background-color: rgb(236, 159, 15);
+    text-align: center; 
+}
+/*estiolo dos titulos*/
+h1{
+    font-family:'Poppins',sans-serif;
+    font-size: 38px;
+    color: #1a5eac;
+    text-align: center;
+   
+    animation: brilho 2s infinite alternate;
+
+}
+
+/*estilo do fundo da pag*/
+body{
+    background: linear-gradient(to right, #1abc9c, #16a085);/*cor fundo da pagina*/
+
+}
+/*cores do menu da pagina*/
+
+button{
+    display: flex;
+    height: 100%;
+    background-color: #eff1ef;
+    color: #0303ff;
+    text-align: center;
+    margin-block-end: 12px;
+    
+}
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+
+}
+
+/*opções de menu*/
+.menu{
+    list-style: none; /*tira os marcadores*/
+    padding: 0;       
+    margin: 0;
+    display: flex;          /* coloca os itens lado a lado */
+    justify-content: center; /* centraliza no meio da tela */
+    gap: 30px;                  /* espaço entre os botões */
+    background-color:  rgb(253, 167, 8);  /* cor da barra de menu */
+    padding: 15px 0;
+
+}
+/*estilo dos linrs (botões)*/
+.menu li a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #a76222;
+    transition: backgronud 0.3s, transform 0.2s;
+
+}
+/*Efeito houver (ao passar o mouse)*/
+.menu li a:hover{
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+body {
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* Estilo geral */
+body {
+    background-color: #973838;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* A section é o container das imagens */
+section {
+    display: flex;                /* Coloca lado a lado */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: flex-start;      /* Alinha pelo topo */
+    gap: 30px;                    /* Espaço entre os elementos */
+    flex-wrap: wrap;              /* Quebra linha se a tela for pequena */
+    padding: 20px;
+}
+
+/* Cada article e aside se comportam como caixinhas */
+article, aside {
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    padding: 15px;
+    width: 220px;                 /* Largura fixa de cada bloco */
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de destaque ao passar o mouse */
+article:hover, aside:hover {
+    transform: scale(1.05);
+}
+
+/* Título de cada livro */
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo da imagem */
+img {
+    width: 180px;                 /* Diminui o tamanho da imagem */
+    height: 250px;                /* Altura proporcional */
+    object-fit: cover;            /* Corta imagem mantendo o formato */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article, aside {
+        width: 80%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

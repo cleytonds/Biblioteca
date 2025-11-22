@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/lista_de_livros.css">
+    <link rel="stylesheet" href="/Static/modal.js">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Livros</h1>
+
+    <div class="books-grid" id="booksGrid">
+    <!-- Book dos livros-->
+        <div class="book" data-title="Republica de Platão" data-author="Miguel de Cervantes" data-desc="Clássico da literatura espanhola. Acompanhe as aventuras de Dom Quixote e Sancho Pança." data-img="data-link/Platão.jpg" data-link="Platão">
+        <a href="/data-link/Platão.pdf" target="_blank">
+        <img src="/data-link/platão.jpg" alt="Capa Dom Quixote">
+        <div class="title">Republica de Platão</div>
+        <div class="author">Platão </div>
+        <div class="Editora">ED:Independente</div>
+        </a>
+    
+        </div>
+
+        <div class="book" data-title=">O Banquete" data-author="José de Alencar" data-desc="Romance sobre a busca dos sonhos e do sentido da vida." data-img="platão O Banquete/Banquete.jpg" data-link="O Banquete">
+        <a href="/platão O Banquete/PlataoOBanquete.pdf" target="_blank">
+        <img src="/platão O Banquete/banquete.jpg" alt="Capa O Alquimista">
+        <div class="title">O Banquete</div>
+        <div class="author">Platão</div>
+        <div class="Editora">ED:VirtualBooks</div>
+        </a>
+        </div>
+
+        <div class="book" data-title="Senhora" data-author="George Orwell" data-desc="Distopia clássica que fala sobre vigilância, propaganda e totalitarismo." data-img="https://via.placeholder.com/300x400?text=1984" data-link="https://pt.wikipedia.org/wiki/1984_(romance)">
+        <img src="https://via.placeholder.com/300x400?text=1984" alt="Capa 1984">
+        <div class="title">1984</div>
+        <div class="author">George Orwell</div>
+        </div>
+
+        <div class="book" data-title="Grande Sertão: Veredas" data-author="Guimarães Rosa" data-desc="Romance modernista brasileiro, com linguagem única e profunda." data-img="https://via.placeholder.com/300x400?text=Grande+Sert%C3%A3o" data-link="https://pt.wikipedia.org/wiki/Grande_Sert%C3%A3o:_Veredas">
+        <img src="https://via.placeholder.com/300x400?text=Grande+Sert%C3%A3o" alt="Capa Grande Sertão">
+        <div class="title">Grande Sertão: Veredas</div>
+        <div class="author">Guimarães Rosa</div>
+        </div>
+
+        <div class="book" data-title="O Pequeno Príncipe" data-author="Antoine de Saint-Exupéry" data-desc="Fábula poética sobre amizade, amor e ver o essencial." data-img="https://via.placeholder.com/300x400?text=O+Pequeno+Pr%C3%ADncipe" data-link="https://pt.wikipedia.org/wiki/O_Pequeno_Pr%C3%ADncipe">
+        <img src="https://via.placeholder.com/300x400?text=O+Pequeno+Pr%C3%ADncipe" alt="Capa O Pequeno Príncipe">
+        <div class="title">O Pequeno Príncipe</div>
+        <div class="author">Antoine de Saint-Exupéry</div>
+        </div>
+
+        <div class="book" data-title="A Metamorfose" data-author="Franz Kafka" data-desc="Conto sobre transformação e alienação humana." data-img="https://via.placeholder.com/300x400?text=A+Metamorfose" data-link="https://pt.wikipedia.org/wiki/A_Metamorfose">
+        <img src="https://via.placeholder.com/300x400?text=A+Metamorfose" alt="Capa A Metamorfose">
+        <div class="title">A Metamorfose</div>
+        <div class="author">Franz Kafka</div>
+        </div>
+
+        <div class="book" data-title="Ensaio sobre a Cegueira" data-author="José Saramago" data-desc="Romance alegórico que mostra a fragilidade da sociedade." data-img="https://via.placeholder.com/300x400?text=Ensaio+sobre+a+Cegueira" data-link="https://pt.wikipedia.org/wiki/Ensaio_sobre_a_cegueira">
+        <img src="https://via.placeholder.com/300x400?text=Ensaio+sobre+a+Cegueira" alt="Capa Ensaio sobre a Cegueira">
+        <div class="title">Ensaio sobre a Cegueira</div>
+        <div class="author">José Saramago</div>
+        </div>
+
+        <div class="book" data-title="Dom Casmurro" data-author="Machado de Assis" data-desc="Clássico brasileiro que explora ciúme e dúvida." data-img="https://via.placeholder.com/300x400?text=Dom+Casmurro" data-link="https://pt.wikipedia.org/wiki/Dom_Casmurro">
+        <img src="https://via.placeholder.com/300x400?text=Dom+Casmurro" alt="Capa Dom Casmurro">
+        <div class="title">Dom Casmurro</div>
+        <div class="author">Machado de Assis</div>
+        </div>
+
+        <div class="book" data-title="A Revolução dos Bichos" data-author="George Orwell" data-desc="Fábula política que critica regimes totalitários." data-img="https://via.placeholder.com/300x400?text=A+Revolu%C3%A7%C3%A3o+dos+Bichos" data-link="https://pt.wikipedia.org/wiki/A_Revolu%C3%A7%C3%A3o_dos_Bichos">
+        <img src="https://via.placeholder.com/300x400?text=A+Revolu%C3%A7%C3%A3o+dos+Bichos" alt="Capa A Revolução dos Bichos">
+        <div class="title">A Revolução dos Bichos</div>
+        <div class="author">George Orwell</div>
+        </div>
+
+        <div class="book" data-title="Memórias Póstumas de Brás Cubas" data-author="Machado de Assis" data-desc="Romance com narrador defunto e ironia refinada." data-img="https://via.placeholder.com/300x400?text=Mem%C3%B3rias+P%C3%B3stumas" data-link="https://pt.wikipedia.org/wiki/Mem%C3%B3rias_p%C3%B3stumas_de_Br%C3%A1s_Cubas">
+        <img src="https://via.placeholder.com/300x400?text=Mem%C3%B3rias+P%C3%B3stumas" alt="Capa Memórias Póstumas">
+        <div class="title">Memórias Póstumas de Brás Cubas</div>
+        <div class="author">Machado de Assis</div>
+        </div>
+
+         <div class="book" data-title="Memórias Póstumas de Brás Cubas" data-author="Machado de Assis" data-desc="Romance com narrador defunto e ironia refinada." data-img="https://via.placeholder.com/300x400?text=Mem%C3%B3rias+P%C3%B3stumas" data-link="https://pt.wikipedia.org/wiki/Mem%C3%B3rias_p%C3%B3stumas_de_Br%C3%A1s_Cubas">
+        <img src="https://via.placeholder.com/300x400?text=Mem%C3%B3rias+P%C3%B3stumas" alt="Capa Memórias Póstumas">
+        <div class="title">Memórias Póstumas de Brás Cubas</div>
+        <div class="author">Machado de Assis</div>
+        </div>
+
+         <div class="book" data-title="Memórias Póstumas de Brás Cubas" data-author="Machado de Assis" data-desc="Romance com narrador defunto e ironia refinada." data-img="https://via.placeholder.com/300x400?text=Mem%C3%B3rias+P%C3%B3stumas" data-link="https://pt.wikipedia.org/wiki/Mem%C3%B3rias_p%C3%B3stumas_de_Br%C3%A1s_Cubas">
+        <img src="https://via.placeholder.com/300x400?text=Mem%C3%B3rias+P%C3%B3stumas" alt="Capa Memórias Póstumas">
+        <div class="title">Memórias Póstumas de Brás Cubas</div>
+        <div class="author">Machado de Assis</div>
+        </div>
+        
+    
+    </div>
+    
+</body>
+</html>

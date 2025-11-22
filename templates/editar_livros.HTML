@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Livro</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Editar Livro</h1>
+    <form method="POST">
+      <input type="text" name="titulo" value="{{ livro['titulo'] }}" required>
+      <input type="text" name="autor" value="{{ livro['autor'] }}" required>
+      <input type="text" name="editora" value="{{ livro['editora'] }}">
+      <input type="number" name="ano" value="{{ livro['ano'] }}">
+      <input type="text" name="genero" value="{{ livro['genero'] }}">
+      <input type="number" name="quantidade" value="{{ livro['quantidade'] }}">
+      <button type="submit">Atualizar</button>
+      <a href="{{ url_for('listar_livros') }}" class="btn">Cancelar</a>
+    </form>
+  </div>
+</body>
+</html>

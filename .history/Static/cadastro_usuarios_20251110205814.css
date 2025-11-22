@@ -1,0 +1,107 @@
+/*fundo da página*/
+body{
+    
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(120, 255, 150),rgb(255, 239, 98)), url('logo.png') no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+/*Caixa de login*/
+.login.box {
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px opx 10px rgba(0,0,0,0.1);
+    width: 500px;
+    text-align:center ;
+
+}
+.formulario input[type="text"],
+.formulario input[type="password"]{
+    margin: 20px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/*Containee do formulário*/
+.formulario { 
+    background-color: #fff;
+    width: 500px;
+    height: 700px;
+    padding: 100;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2) ;
+    text-align: center;
+
+}
+input[type="submit"]{
+    background-color: #2daf54;
+    color: rgb(8, 8, 8);
+    padding: 12px;
+    width: 30%;
+    margin-top: 20px;
+    border: nome;
+    border-radius: 8px;
+    font-size: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;/*suavizar o efeito hover*/
+}
+/*Botão não tem conta? Cadastre-se*/
+.cadastro-link{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #0000ee;
+    text-decoration: none;
+    font-size: 14px;
+
+    
+}
+
+/*Titulo*/
+label {
+    display: block;
+    font-weight:  block;
+    margin-bottom: 5px;
+    color: #555;
+}
+/*iputs*/
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: nome;
+    transition: 0.3s;
+}
+/*Efeito quando o campo está em foco*/
+input:focus{
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+/*Botão*/
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: wheat;
+    border: nome;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: backgroud 0.3s;
+}
+/*Efeito hover*/
+button:hover{
+    background-color: #1e5edc;
+}

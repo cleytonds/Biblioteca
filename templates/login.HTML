@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!--Aqui está o link do CSS-->
+    <link rel="stylesheet" href="../Static/style.css">   
+    
+</head>
+<body>
+    <div class="login-box">
+        <!--aba de cadastro-->
+        <form class="formulario" action="/login" method="post">
+            <h1 style="color: black;"> Bem-vindo</h1>
+            <h3 style="color: black;"> Login </h3>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <div class="Campo-senha">
+            <label for="password">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            </div><br>
+
+           <p><a href="Recuperar_senha.html"> Esqueci minha senha</a></p>
+           
+           <input type="submit" value="fazer Login">
+           
+           <div class="link-container">
+               <a href="cadastro_usuarios.HTML"> Não tem conta ? Cadastre-se</a>
+            </div>
+
+        </form>
+            
+    </div>
+
+    <script>
+        function fazerLogin(){
+            const usuario = document.getElementBuId("email").value;
+            const senha = document.gerElementById("password").value;
+
+
+            //validação do login//
+            if (usuario === "admin" && senha === "1234"){
+                document.getElementById("mensagem").textContent = "Login feito com sucesso!"
+                setTimeout(() => {
+                 //redireciona para a página da biblioteca   
+                 window.location.href = "biblioteca.html";   
+                }, 1500); //1.5 segundos depois
+            }else {
+                document.getElementBuId("mensagem").textContent = "Usuário ou senha incorreto!";
+                document.getElementById("mensagem").style.color = "red";
+
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

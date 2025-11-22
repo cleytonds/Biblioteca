@@ -1,0 +1,76 @@
+/*fundo da página*/
+body{
+    
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(120, 255, 150),rgb(255, 239, 98)), url('logo.png') no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+input{
+    width: 200px; /*define a largura dos capos*/
+    height: 40px; /*define a altura dos campos*/
+    padding: 10px; /*adiciona as bordas em todos os lados*/
+    font-size: 16px; /*aumenta o tamanho da fiinte*/
+    box-sizing: border-box;
+}
+
+/*reset básico*/
+body{
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/*Container do Formulario*/
+.from-container{
+    background-color: #f8f8f8;
+    width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.2);
+
+}
+/*Titulo do formulário*/
+.from-container h1{
+    text-align: center;
+    color: #2a77c4;
+    margin-bottom: 30px;
+}
+/*Labels e inputs*/
+.from-container label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.from-container input{
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 15px;
+    border-radius: 16;
+    border: 1px solid #d61c1c;
+    box-sizing: border-box;
+
+}
+/*Botão de cadastro*/
+.btn-cadastro {
+    width: 15%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: wheat;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.btn-cadastro:hover{
+    background-color: #45a049;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba( 0,0,0,0.2);
+}
